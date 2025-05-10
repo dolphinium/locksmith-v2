@@ -1,17 +1,16 @@
 import Layout from '@/components/Layout';
 import ServicesSection from '@/components/ServicesSection';
-import styles from '@/styles/Hizmetlerimiz.module.css'; // We'll create this for page-specific styles if needed
+import styles from '@/styles/Hizmetlerimiz.module.css';
 
 const HizmetlerimizPage = () => {
   return (
     <Layout title="Hizmetlerimiz - Anahtarcı Osman">
       <div className={styles.hizmetlerimizPage}>
-        {/* Optional: Add a hero banner similar to Hakkimizda if the live site has one for this page */}
-        {/* <div className={styles.heroBanner}>
-          <h1 className={styles.pageTitle}>Hizmetlerimiz</h1>
-        </div> */}
+        <div className={styles.pageHeader}>
+          <p className={styles.subTitle}>Sunduğumuz Çözümler</p>
+          <h1 className={styles.mainTitle}>Hizmetlerimiz</h1>
+        </div>
         
-        {/* The ServicesSection already has its own title "HİZMETLERİMİZ" */}
         <ServicesSection />
       </div>
     </Layout>

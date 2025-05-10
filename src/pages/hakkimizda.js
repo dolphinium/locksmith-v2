@@ -1,6 +1,6 @@
 import Layout from '@/components/Layout';
 import Image from 'next/image';
-import styles from '@/styles/Hakkimizda.module.css'; // We'll create this CSS module
+import styles from '@/styles/Hakkimizda.module.css';
 
 const HakkimizdaPage = () => {
   const galleryImages = [
@@ -13,13 +13,9 @@ const HakkimizdaPage = () => {
   return (
     <Layout title="Hakkımızda - Anahtarcı Osman">
       <div className={styles.hakkimizdaPage}>
-        <div className={styles.heroBanner}>
-          {/* The original site has a large banner image here, often part of the header or a separate component.
-              For simplicity, we'll use a colored div or a simple banner text.
-              The actual header is handled by Layout.js.
-              The "OTO ANAHTARCI GİRİŞİ" button is also part of the main header.
-          */}
-          <h1 className={styles.pageTitle}>Hakkımızda</h1>
+        <div className={styles.pageHeader}>
+          <p className={styles.subTitle}>Şirket Profili</p>
+          <h1 className={styles.mainTitle}>Hakkımızda</h1>
         </div>
 
         <div className={styles.mainContent}>
