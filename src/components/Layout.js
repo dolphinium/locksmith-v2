@@ -1,8 +1,10 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Head from 'next/head';
+import CallButton from '@/components/CallButton';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
-const Layout = ({ children, title = 'Rem Anahtar' }) => {
+const Layout = ({ children, title = 'Anahtarcı Osman' }) => {
   return (
     <>
       <Head>
@@ -14,6 +16,8 @@ const Layout = ({ children, title = 'Rem Anahtar' }) => {
       <Header />
       <main>{children}</main>
       <Footer />
+      <CallButton />
+      <WhatsAppButton />
       <style jsx global>{`
         body {
           margin: 0;

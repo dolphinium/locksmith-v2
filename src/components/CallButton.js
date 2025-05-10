@@ -8,7 +8,7 @@ const PhoneIcon = () => (
 );
 
 const CallButton = () => {
-  const phoneNumber = "905551234567"; // Replace with actual number
+  const phoneNumber = "+905325862228"; // Replace with actual number
 
   return (
     <a href={`tel:${phoneNumber}`} className={styles.callButton}>

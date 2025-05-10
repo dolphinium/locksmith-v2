@@ -4,37 +4,43 @@ import styles from './ServicesSection.module.css';
 const servicesData = [
   {
     id: 1,
-    title: 'Yedek Anahtar',
-    description: 'Her marka ve model aracınız için yedek anahtar talebinizi yerine getiriyoruz. Bu işlem için araç sahibi ve ruhsatın olması birincil kuralımızdır.',
-    imageUrl: '/placeholder-service1.jpg', // Replace with actual or better placeholder
-    videoLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', // Example video link
+    title: '7/24 Çilingir Hizmeti (Ev, Oto, Kasa)',
+    description: 'Günün her saati ev, araç veya kasa çilingir hizmeti sağlıyoruz. Acil durumlarınızda güvenli ve hızlı çözümler sunuyoruz.',
+    imageUrl: '/placeholder-service1.jpg',
+    videoLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', // Opsiyonel video örneği
   },
   {
     id: 2,
-    title: 'Kayıp Anahtar',
-    description: 'Kayıp anahtar işlemi için, kaybolan anahtarlarınızın işlevini sonlandırarak yeni bir anahtar üretiyoruz. Bu işlem için araç sahibi ve ruhsatın olması birincil kuralımızdır.',
+    title: 'Kumandalı Anahtar Yapımı',
+    description: 'Araç ve benzeri sistemler için kumandalı anahtar üretimi yapıyoruz. Orijinaline en yakın kalitede çözümler sunuyoruz.',
     imageUrl: '/placeholder-service2.jpg',
   },
   {
     id: 3,
-    title: 'Kumanda Tamiri',
-    description: 'Araçlarınızın uzaktan kumanda tamirlerini uzman ekibimiz ile Rem Anahtar servisimizde sorunsuz bir şekilde gerçekleştiriyoruz.',
+    title: 'Yedek Anahtar Çoğaltma',
+    description: 'Ev, araç ve iş yeri anahtarlarınız için hızlı ve güvenilir yedek anahtar çoğaltma hizmeti sağlıyoruz.',
     imageUrl: '/placeholder-service3.jpg',
   },
   {
     id: 4,
-    title: 'Immobilizer',
-    description: 'Aracınız için immobilizer anahtar, çoğaltma, kopyalama, değiştirme, tamir ve yenileme hizmetlerimiz mevcuttur.',
+    title: 'Kilit Sistemleri Montaj ve Tamiri',
+    description: 'Tüm kilit sistemlerinin montajı, bakımı ve tamiri uzman ekibimiz tarafından titizlikle yapılmaktadır.',
     imageUrl: '/placeholder-service4.jpg',
   },
   {
     id: 5,
-    title: 'Kumanda Kap & Pil Değişimi',
-    description: 'Aracınızın yıpranmış, tuşları bozulmuş veya deforme olmuş kumandalarınızı yeniliyoruz. Kumandanızın pili kullanım ömrü doldu ise kumanda pilinizi değiştiriyoruz.',
+    title: 'Kumanda Tamiri (Garaj, Kepenk vb.)',
+    description: 'Garaj, kepenk ve benzeri sistemlere ait kumandaların tamiri, tuş değişimi ve teknik desteği sağlıyoruz.',
     imageUrl: '/placeholder-service5.jpg',
   },
-  // Add more services as needed from the original site
+  {
+    id: 6,
+    title: 'Elektronik Anahtar Çözümleri',
+    description: 'Modern araçlar ve güvenlik sistemleri için elektronik anahtar üretimi, kodlama ve çoğaltma hizmetleri sunuyoruz.',
+    imageUrl: '/placeholder-service6.jpg',
+  },
 ];
+
 
 const ServicesSection = () => {
   return (

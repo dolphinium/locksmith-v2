@@ -1,6 +1,6 @@
 import Layout from '@/components/Layout';
 import Image from 'next/image';
-import styles from '@/styles/BizeUlasin.module.css'; // We'll create this CSS module
+import styles from '@/styles/Iletisim.module.css'; // Renamed CSS module
 
 // Placeholder SVGs for social icons - replace with actual icons or a library
 const FacebookIcon = () => <svg viewBox="0 0 24 24" width="24" height="24" fill="#1877F2"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.35C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.142v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.732 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>;
@@ -27,7 +27,7 @@ const BizeUlasinPage = () => {
         <div className={styles.mapSection}>
           {/* Placeholder for Google Map iframe */}
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200.17609471438988!2d34.31102568639799!3d36.60670384873761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d8632251fe2be7%3A0xb7eb0ba290c1fe28!2zQWsgUGFydGktZXJkZW1saSBCZWxkZSDEsGzDp2UgQmHFn2thbmzEscSfxLE!5e0!3m2!1sen!2str!4v1746806081207!5m2!1sen!2str"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.830699102987!2d28.79986631538498!3d41.05020097929663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa51b0917c775%3A0x89c1e9c6f2a2c20f!2sRem%20Anahtar!5e0!3m2!1str!2str!4v1672860000000!5m2!1str!2str"
             width="100%"
             height="450"
             style={{ border:0 }}
@@ -45,11 +45,12 @@ const BizeUlasinPage = () => {
             </div>
             <div className={styles.infoText}>
               <h3>İletişim Bilgileri</h3>
-              <p><strong>Adres:</strong> Merkez Mah. Şehit Süleyman Şahin Sk. No:4/A Erdemli/Mersin, 33780</p>
-              <p><strong>Tel:</strong> <a href="tel:+90 532 586 22 28">+90 532 586 22 28</a></p>
+              <p><strong>Adres:</strong> İkitelli OSB, Dolapdere San. Sit. 22. Ada No: 38 Başakşehir / İSTANBUL</p>
+              <p><strong>Tel:</strong> <a href="tel:+902124851746">+90 212 485 1746</a></p>
               <p><strong>E-Posta:</strong> <a href="mailto:anahtarciosman33@gmail.com">anahtarciosman33@gmail.com</a></p>
               <h4>Çalışma Saatlerimiz:</h4>
-              <p>7/24</p>
+              <p>Pzt - Cum: 08:30 – 18:30</p>
+              <p>Cumartesi: 08:30 – 13:00</p>
             </div>
           </div>
           <div className={styles.socialMedia}>

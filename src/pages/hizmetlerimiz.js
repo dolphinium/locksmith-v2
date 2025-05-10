@@ -4,7 +4,7 @@ import styles from '@/styles/Hizmetlerimiz.module.css'; // We'll create this for
 
 const HizmetlerimizPage = () => {
   return (
-    <Layout title="Hizmetlerimiz - Rem Anahtar">
+    <Layout title="Hizmetlerimiz - Anahtarcı Osman">
       <div className={styles.hizmetlerimizPage}>
         {/* Optional: Add a hero banner similar to Hakkimizda if the live site has one for this page */}
         {/* <div className={styles.heroBanner}>

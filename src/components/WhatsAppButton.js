@@ -8,7 +8,7 @@ const WhatsAppIcon = () => (
 );
 
 const WhatsAppButton = () => {
-  const phoneNumber = "905551234567"; // Replace with actual number
+  const phoneNumber = "+905325862228"; // Replace with actual number
   const message = "Merhaba, web sitenizden ulaşıyorum."; // Optional pre-filled message
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

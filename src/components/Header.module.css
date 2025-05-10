@@ -69,22 +69,82 @@
 
 /* Search icon styles removed */
 
+.hamburger {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+.hamburgerLine {
+  width: 2rem;
+  height: 0.25rem;
+  background: white;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
 /* Basic responsiveness */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
+    /* flex-direction: column; */ /* Keep header items in a row */
     padding: 1rem;
+    position: relative; /* Needed for absolute positioning of nav */
   }
+
   .nav {
-    margin-top: 1rem;
-    gap: 1rem;
-    flex-wrap: wrap; /* Allow nav items to wrap on smaller screens */
-    justify-content: center;
+    display: none; /* Hide nav by default on mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Position below the header */
+    left: 0;
+    width: 100%;
+    background-color: #1a237e; /* Same as header background */
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 5; /* Ensure nav is above other content but below hamburger */
   }
+
+  .navOpen {
+    display: flex; /* Show nav when menu is open */
+  }
+
   .nav a {
-    font-size: 0.9rem;
+    font-size: 1rem; /* Adjust font size for mobile */
+    text-align: center;
+    padding: 0.75rem 1rem;
+    width: 100%; /* Make links take full width */
   }
+
+  .nav a:hover {
+    background-color: #283593; /* Slightly lighter blue for hover */
+  }
+
+  .nav a::after {
+    display: none; /* Remove underline effect on mobile */
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger on mobile */
+  }
+
   .actions {
-    margin-top: 1rem;
+    display: none; /* Hide actions on mobile, or adjust as needed */
+  }
+
+  .logoContainer {
+    flex-grow: 1; /* Allow logo to take available space */
   }
 }

@@ -6,9 +6,9 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <div className={styles.section}>
-          <h4>Rem Anahtar</h4>
-          <p>Oto Elektronik Anahtar Çözümleri</p>
-          <p>&copy; {new Date().getFullYear()} Rem Anahtar. Tüm hakları saklıdır.</p>
+          <h4>Anaharcı Osman</h4>
+          <p>Oto Elektronik Anahtar ve Çilingirlik Hizmetleri</p>
+          <p>&copy; {new Date().getFullYear()} Anahtarcı Osman. Tüm hakları saklıdır.</p>
         </div>
         <div className={styles.section}>
           <h4>Hızlı Linkler</h4>
@@ -21,13 +21,10 @@ const Footer = () => {
         </div>
         <div className={styles.section}>
           <h4>İletişim</h4>
-          <p>Adres: Örnek Mahallesi, Anahtar Sokak No:123, İstanbul</p>
-          <p>Telefon: +90 555 123 4567</p>
-          <p>Email: bilgi@remanahtar.com</p>
+          <p>Adres: Merkez Mah. Şehit Süleyman Şahin Sk. No:4/A Erdemli/Mersin, 33780</p>
+          <p>Telefon: +90 532 586 22 28</p>
+          <p>Email: anahtarciosman33@gmail.com</p>
         </div>
-      </div>
-      <div className={styles.bottomBar}>
-        <p>Bu site bir klon projesidir.</p>
       </div>
     </footer>
   );

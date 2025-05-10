@@ -11,7 +11,7 @@ const HakkimizdaPage = () => {
   ];
 
   return (
-    <Layout title="Hakkımızda - Rem Anahtar">
+    <Layout title="Hakkımızda - Anahtarcı Osman">
       <div className={styles.hakkimizdaPage}>
         <div className={styles.heroBanner}>
           {/* The original site has a large banner image here, often part of the header or a separate component.
@@ -35,26 +35,19 @@ const HakkimizdaPage = () => {
           <div className={styles.textSection}>
             <h2>HAKKIMIZDA</h2>
             <p>
-              Rem Anahtar, Oto Çilingir Ürünleri tedariğinde uzmanlaşmış,
-              Hollanda ve Türkiye merkezli bir şirkettir.
+              Osman Levent Kaya yönetimindeki Anahtarcı Osman, 1995 yılından bu yana Erdemli ve çevresinde profesyonel çilingirlik ve anahtar çözümleri sunmaktadır.
             </p>
             <p>
-              Hem orijinal hem de satış sonrası araç uzaktan kumandası ve
-              transponder anahtarlarının dünya çapında distribütörüyüz.
+              Müşteri memnuniyetini ön planda tutarak, 7 gün 24 saat kesintisiz hizmet vermekteyiz.
             </p>
             <p>
-              Geniş ürün yelpazemiz, en son teknolojiye sahip anahtar kesme
-              makineleri, programlama cihazları ve her türlü oto anahtar
-              ekipmanlarını kapsamaktadır. Müşteri memnuniyetini ön planda
-              tutarak, sektördeki en kaliteli ürünleri ve hizmetleri sunmayı
-              amaçlıyoruz.
+              Ev, oto, kasa çilingir hizmetlerinin yanı sıra, kumandalı anahtar yapımı, yedek anahtar çoğaltma, kilit sistemleri ve garaj/kepenk kumanda tamiri gibi geniş bir yelpazede hizmet sunuyoruz.
             </p>
             <p>
-              Uzman ekibimiz, sürekli olarak kendini geliştirmekte ve en yeni
-              teknolojileri takip ederek müşterilerimize en iyi çözümleri
-              sunmaktadır.
+              Teknolojiyi yakından takip ederek, elektronik anahtar çözümlerinde de yanınızdayız.
             </p>
           </div>
+
         </div>
 
         {galleryImages.length > 0 && (

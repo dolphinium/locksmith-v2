@@ -1,22 +1,34 @@
 import Link from 'next/link';
-import styles from './Header.module.css'; // We'll create this CSS module next
+import { useState } from 'react';
+import styles from './Header.module.css';
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.logoContainer}>
         <Link href="/" legacyBehavior>
           <a className={styles.logo}>
-            remanahatar
-            <span className={styles.logoSubtitle}>Oto Elektronik Anahtar</span>
+            Anahtarcı Osman
+            <span className={styles.logoSubtitle}>Oto Elektronik Anahtar ve Çilingirlik Hizmetleri</span>
           </a>
         </Link>
       </div>
-      <nav className={styles.nav}>
-        <Link href="/" legacyBehavior><a>Anasayfa</a></Link>
-        <Link href="/hakkimizda" legacyBehavior><a>Hakkımızda</a></Link>
-        <Link href="/hizmetlerimiz" legacyBehavior><a>Hizmetlerimiz</a></Link>
-        <Link href="/bize-ulasin" legacyBehavior><a>Bize Ulaşın</a></Link>
+      <button className={styles.hamburger} onClick={toggleMenu} aria-label="Menüyü aç/kapat">
+        <span className={styles.hamburgerLine}></span>
+        <span className={styles.hamburgerLine}></span>
+        <span className={styles.hamburgerLine}></span>
+      </button>
+      <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}>
+        <Link href="/" legacyBehavior><a onClick={toggleMenu}>Anasayfa</a></Link>
+        <Link href="/hakkimizda" legacyBehavior><a onClick={toggleMenu}>Hakkımızda</a></Link>
+        <Link href="/hizmetlerimiz" legacyBehavior><a onClick={toggleMenu}>Hizmetlerimiz</a></Link>
+        <Link href="/bize-ulasin" legacyBehavior><a onClick={toggleMenu}>Bize Ulaşın</a></Link>
       </nav>
       <div className={styles.actions}>
         {/* Search Icon Removed */}
