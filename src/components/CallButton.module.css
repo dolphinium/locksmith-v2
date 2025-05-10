@@ -1,0 +1,81 @@
+.callButton {
+  position: fixed;
+  bottom: 90px; /* Position above WhatsApp button, adjust as needed */
+  right: 20px; /* Align with WhatsApp button */
+  background-color: #ffab40; /* Orange color, similar to site's accent */
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease;
+  text-decoration: none;
+}
+
+.callButton:hover {
+  transform: scale(1.1);
+  background-color: #f57c00; /* Darker orange on hover */
+}
+
+.callButton svg {
+  width: 28px; /* Adjust icon size */
+  height: 28px;
+  fill: white;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: max-content;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 12px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position above the button */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.callButton:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .callButton {
+    width: 50px;
+    height: 50px;
+    bottom: 75px; /* Adjust to stay above WhatsApp button */
+    right: 15px;
+  }
+  .callButton svg {
+    width: 24px;
+    height: 24px;
+  }
+  .tooltip {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}

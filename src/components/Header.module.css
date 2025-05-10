@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1a237e; /* Dark blue, similar to original */
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logoContainer {
+  /* Styles for logo container if needed */
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logoSubtitle {
+  font-size: 0.7rem;
+  font-weight: normal;
+  color: #c5cae9; /* Lighter shade for subtitle */
+  margin-top: 2px;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem; /* Spacing between nav items */
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.nav a:hover {
+  color: #ffab40; /* Orange accent on hover */
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffab40;
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Search icon styles removed */
+
+/* Basic responsiveness */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .nav {
+    margin-top: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap; /* Allow nav items to wrap on smaller screens */
+    justify-content: center;
+  }
+  .nav a {
+    font-size: 0.9rem;
+  }
+  .actions {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,110 @@
+.heroSection {
+  padding: 2rem 1rem;
+  background-color: #e9ecef; /* Light grey background for the section */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* For absolute positioning of bookmark and brand label */
+}
+
+.imageContainer {
+  width: 100%;
+  height: 200px; /* Fixed height for images */
+  position: relative;
+}
+
+.image {
+  object-fit: cover; /* Added for next/image with fill prop */
+}
+
+.brandLabel {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 171, 64, 0.9); /* Orange accent, slightly transparent */
+  color: #333;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.cardContent {
+  padding: 1rem;
+  flex-grow: 1; /* Allows content to take available space */
+}
+
+.cardContent h3 {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.meta {
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e0e0e0; /* Lighter text for meta */
+  margin-top: auto; /* Pushes meta to the bottom of cardContent */
+}
+
+.editor, .date {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.editor svg {
+ fill: #e0e0e0;
+}
+
+.bookmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookmark svg {
+  stroke: white;
+}
+
+.bookmark:hover svg {
+  stroke: #ffab40; /* Orange accent on hover */
+  fill: #ffab40;
+}
+
+/* Adjustments for smaller screens if needed */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+  }
+  .cardContent h3 {
+    font-size: 1.1rem;
+  }
+  .meta {
+    font-size: 0.8rem;
+  }
+}
