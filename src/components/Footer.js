@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './Footer.module.css'; // We'll create this CSS module next
 
 const Footer = () => {
@@ -12,10 +13,10 @@ const Footer = () => {
         <div className={styles.section}>
           <h4>Hızlı Linkler</h4>
           <ul>
-            <li><a href="/">Anasayfa</a></li>
-            <li><a href="/hakkimizda">Hakkımızda</a></li>
-            <li><a href="/hizmetlerimiz">Hizmetlerimiz</a></li>
-            <li><a href="/bize-ulasin">Bize Ulaşın</a></li>
+            <li><Link href="/" legacyBehavior><a>Anasayfa</a></Link></li>
+            <li><Link href="/hakkimizda" legacyBehavior><a>Hakkımızda</a></Link></li>
+            <li><Link href="/hizmetlerimiz" legacyBehavior><a>Hizmetlerimiz</a></Link></li>
+            <li><Link href="/bize-ulasin" legacyBehavior><a>Bize Ulaşın</a></Link></li>
           </ul>
         </div>
         <div className={styles.section}>
