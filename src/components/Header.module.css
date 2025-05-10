@@ -3,8 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #1a237e; /* Dark blue, similar to original */
-  color: white;
+  background-color: #222222; /* Shop background */
+  color: #FFFFFF; /* Shop text */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -16,7 +16,7 @@
   font-size: 1.8rem;
   font-weight: bold;
   text-decoration: none;
-  color: white;
+  color: #00A859; /* Shop accent green */
   display: flex;
   flex-direction: column;
   line-height: 1;
@@ -25,7 +25,7 @@
 .logoSubtitle {
   font-size: 0.7rem;
   font-weight: normal;
-  color: #c5cae9; /* Lighter shade for subtitle */
+  color: #FFFFFF; /* Shop text */
   margin-top: 2px;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .nav a {
-  color: white;
+  color: #FFFFFF; /* Shop text */
   text-decoration: none;
   font-size: 1rem;
   padding: 0.5rem 0;
@@ -43,7 +43,7 @@
 }
 
 .nav a:hover {
-  color: #ffab40; /* Orange accent on hover */
+  color: #00A859; /* Shop accent green */
 }
 
 .nav a::after {
@@ -53,7 +53,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #ffab40;
+  background-color: #00A859; /* Shop accent green */
   transition: width 0.3s ease;
 }
 
@@ -89,7 +89,7 @@
 .hamburgerLine {
   width: 2rem;
   height: 0.25rem;
-  background: white;
+  background: #FFFFFF; /* Shop text */
   border-radius: 10px;
   transition: all 0.3s linear;
   position: relative;
@@ -111,7 +111,7 @@
     top: 100%; /* Position below the header */
     left: 0;
     width: 100%;
-    background-color: #1a237e; /* Same as header background */
+    background-color: #222222; /* Shop background */
     padding: 1rem 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 5; /* Ensure nav is above other content but below hamburger */
@@ -129,7 +129,7 @@
   }
 
   .nav a:hover {
-    background-color: #283593; /* Slightly lighter blue for hover */
+    color: #00A859; /* Shop accent green for hover on mobile */
   }
 
   .nav a::after {

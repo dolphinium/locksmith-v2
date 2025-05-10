@@ -1,6 +1,6 @@
 .footer {
-  background-color: #1c1c1c; /* Very dark grey, almost black */
-  color: #ccc; /* Light grey text */
+  background-color: #222222; /* Shop background */
+  color: #FFFFFF; /* Shop text */
   padding: 2rem 2rem 0; /* Padding top, sides, no bottom padding for bottomBar */
   font-size: 0.9rem;
 }
@@ -21,7 +21,7 @@
 }
 
 .section h4 {
-  color: white;
+  color: #00A859; /* Shop accent green */
   margin-bottom: 1rem;
   font-size: 1.1rem;
 }
@@ -38,21 +38,21 @@
 }
 
 .section a {
-  color: #ccc;
+  color: #FFFFFF; /* Shop text */
   text-decoration: none;
 }
 
 .section a:hover {
-  color: #ffab40; /* Orange accent on hover */
+  color: #00A859; /* Shop accent green */
   text-decoration: underline;
 }
 
 .bottomBar {
   text-align: center;
   padding: 1rem 0;
-  border-top: 1px solid #333; /* Separator line */
+  border-top: 1px solid #444444; /* Slightly lighter separator line */
   font-size: 0.8rem;
-  color: #aaa;
+  color: rgba(255, 255, 255, 0.7); /* Dimmer white for bottom bar text */
 }
 
 /* Responsive adjustments */

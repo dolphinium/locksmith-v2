@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 90px; /* Position above WhatsApp button, adjust as needed */
   right: 20px; /* Align with WhatsApp button */
-  background-color: #ffab40; /* Orange color, similar to site's accent */
+  background-color: #00A859; /* Shop accent green */
   color: white;
   width: 60px;
   height: 60px;
@@ -18,7 +18,7 @@
 
 .callButton:hover {
   transform: scale(1.1);
-  background-color: #f57c00; /* Darker orange on hover */
+  background-color: #008F4A; /* Darker green on hover */
 }
 
 .callButton svg {

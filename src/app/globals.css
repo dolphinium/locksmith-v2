@@ -1,26 +1,34 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ffffff; /* Original light background */
+  --foreground: #171717; /* Original dark foreground */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  /* --color-accent-green: var(--accent-green); Removed custom accent */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0a0a0a; /* Original dark mode background */
+    --foreground: #ededed; /* Original dark mode foreground */
+    /* --accent-green: #00C060; Removed custom accent */
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  /* background: var(--background); Defaulting to white/dark as per :root */
+  /* color: var(--foreground); */
+  /* The body will now inherit the new shop colors directly where needed,
+     or use these defaults if not overridden by component styles.
+     For the main shop theme, components will use hardcoded #222222 for background
+     and #FFFFFF for text. */
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #222222; /* Applying new shop background globally */
+  color: #FFFFFF; /* Applying new shop text color globally */
 }
