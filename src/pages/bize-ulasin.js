@@ -27,7 +27,7 @@ const BizeUlasinPage = () => {
         <div className={styles.mapSection}>
           {/* Placeholder for Google Map iframe */}
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200.17609471438988!2d34.31102568639799!3d36.60670384873761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d8632251fe2be7%3A0xb7eb0ba290c1fe28!2zQWsgUGFydGktZXJkZW1saSBCZWxkZSDEsGzDp2UgQmHFn2thbmzEscSfxLE!5e0!3m2!1sen!2str!4v1746806081207!5m2!1sen!2str"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3202.8182067678995!2d34.3111746!3d36.606687199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d8636756298dbf%3A0x6e8c105691364e49!2sAnahtarc%C4%B1%20Osman!5e0!3m2!1sen!2str!4v1748529134332!5m2!1sen!2str"
             width="100%"
             height="450"
             style={{ border:0 }}
@@ -47,7 +47,7 @@ const BizeUlasinPage = () => {
               <h3>İletişim Bilgileri</h3>
               <p><strong>Adres:</strong> Merkez Mah. Şehit Süleyman Şahin Sk. No:4/A Erdemli/Mersin, 33780</p>
               <p><strong>Tel:</strong> <a href="tel:+90 532 586 22 28">+90 532 586 22 28</a></p>
-              <p><strong>E-Posta:</strong> <a href="mailto:anahtarciosman33@gmail.com">anahtarciosman33@gmail.com</a></p>
+              <p><strong>E-Posta:</strong> <a href="mailto:osmananahtarci@gmail.com">osmananahtarci@gmail.com</a></p>
               <h4>Çalışma Saatlerimiz:</h4>
               <p>7/24</p>
             </div>
@@ -55,10 +55,10 @@ const BizeUlasinPage = () => {
           <div className={styles.socialMedia}>
             <h3>Sosyal Medya Hesaplarımız</h3>
             <div className={styles.socialIcons}>
-              <a href="https://www.facebook.com/anahtarciosman" target="_blank" rel="noopener noreferrer"><FacebookIcon /> Facebook</a>
-              <a href="https://twitter.com/anahtarciosman" target="_blank" rel="noopener noreferrer"><XIcon /> X</a>
+              <a href="https://www.facebook.com/osmanlevent.kaya.3/" target="_blank" rel="noopener noreferrer"><FacebookIcon /> Facebook</a>
+              {/* <a href="https://twitter.com/anahtarciosman" target="_blank" rel="noopener noreferrer"><XIcon /> X</a> */}
               <a href="https://www.instagram.com/anahtarciosman" target="_blank" rel="noopener noreferrer"><InstagramIcon /> Instagram</a>
-              <a href="https://www.youtube.com/anahtarciosman" target="_blank" rel="noopener noreferrer"><YouTubeIcon /> Youtube</a>
+              {/* <a href="https://www.youtube.com/anahtarciosman" target="_blank" rel="noopener noreferrer"><YouTubeIcon /> Youtube</a> */}
             </div>
           </div>
         </div>

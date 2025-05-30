@@ -23,7 +23,7 @@ const Footer = () => {
           <h4>İletişim</h4>
           <p>Adres: Merkez Mah. Şehit Süleyman Şahin Sk. No:4/A Erdemli/Mersin, 33780</p>
           <p>Telefon: +90 532 586 22 28</p>
-          <p>Email: anahtarciosman33@gmail.com</p>
+          <p>Email: osmananahtarci@gmail.com</p>
         </div>
       </div>
     </footer>
