@@ -39,7 +39,7 @@ const BizeUlasinPage = () => {
         <div className={styles.contactDetailsSection}>
           <div className={styles.infoAndImage}>
             <div className={styles.infoImageContainer}>
-              <Image src="/placeholder-remkeys-main.jpg" alt="Remkeys Mağaza" width={400} height={300} objectFit="cover" className={styles.infoImage} />
+              <Image src="/dukkan-main.jpg" alt="Remkeys Mağaza" width={400} height={300} objectFit="cover" className={styles.infoImage} />
             </div>
             <div className={styles.infoText}>
               <h3>İletişim Bilgileri</h3>

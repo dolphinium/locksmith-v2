@@ -4,10 +4,10 @@ import styles from '@/styles/Hakkimizda.module.css';
 
 const HakkimizdaPage = () => {
   const galleryImages = [
-    { id: 1, src: '/placeholder-gallery1.jpg', alt: 'Remkeys Gallery Image 1' },
-    { id: 2, src: '/placeholder-gallery2.jpg', alt: 'Remkeys Gallery Image 2' },
-    { id: 3, src: '/placeholder-gallery3.jpg', alt: 'Remkeys Gallery Image 3' },
-    { id: 4, src: '/placeholder-gallery4.jpg', alt: 'Remkeys Gallery Image 4' },
+    { id: 1, src: '/dukkan-dis.jpeg'},
+    { id: 2, src: '/dukkan-main.jpg'},
+    { id: 3, src: '/dukkan-dis-2.jpeg'},
+    { id: 4, src: '/dukkan-dis-3.jpeg'},
   ];
 
   return (
@@ -21,8 +21,7 @@ const HakkimizdaPage = () => {
         <div className={styles.mainContent}>
           <div className={styles.imageSection}>
             <Image
-              src="/placeholder-remkeys-main.jpg" // Replace with actual image path
-              alt="Remkeys Automotive Locksmith Supply"
+              src="/dukkan-ic.jpeg" // Replace with actual image path
               width={600} // Adjust as per original image aspect ratio
               height={400} // Adjust as per original image aspect ratio
               className={styles.mainImage}
