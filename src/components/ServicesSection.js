@@ -6,38 +6,37 @@ const servicesData = [
     id: 1,
     title: '7/24 Çilingir Hizmeti (Ev, Oto, Kasa)',
     description: 'Günün her saati ev, araç veya kasa çilingir hizmeti sağlıyoruz. Acil durumlarınızda güvenli ve hızlı çözümler sunuyoruz.',
-    imageUrl: '/placeholder-service1.jpg',
-    videoLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', // Opsiyonel video örneği
+    imageUrl: '/cilingir.webp'
   },
   {
     id: 2,
     title: 'Kumandalı Anahtar Yapımı',
     description: 'Araç ve benzeri sistemler için kumandalı anahtar üretimi yapıyoruz. Orijinaline en yakın kalitede çözümler sunuyoruz.',
-    imageUrl: '/placeholder-service2.jpg',
+    imageUrl: '/kumandalı_anahtar.webp',
   },
   {
     id: 3,
     title: 'Yedek Anahtar Çoğaltma',
     description: 'Ev, araç ve iş yeri anahtarlarınız için hızlı ve güvenilir yedek anahtar çoğaltma hizmeti sağlıyoruz.',
-    imageUrl: '/placeholder-service3.jpg',
+    imageUrl: '/anahtar_cogaltma.webp',
   },
   {
     id: 4,
     title: 'Kilit Sistemleri Montaj ve Tamiri',
     description: 'Tüm kilit sistemlerinin montajı, bakımı ve tamiri uzman ekibimiz tarafından titizlikle yapılmaktadır.',
-    imageUrl: '/placeholder-service4.jpg',
+    imageUrl: '/kilit_montaj.webp',
   },
   {
     id: 5,
     title: 'Kumanda Tamiri (Garaj, Kepenk vb.)',
     description: 'Garaj, kepenk ve benzeri sistemlere ait kumandaların tamiri, tuş değişimi ve teknik desteği sağlıyoruz.',
-    imageUrl: '/placeholder-service5.jpg',
+    imageUrl: '/kumanda_tamiri.webp',
   },
   {
     id: 6,
     title: 'Elektronik Anahtar Çözümleri',
     description: 'Modern araçlar ve güvenlik sistemleri için elektronik anahtar üretimi, kodlama ve çoğaltma hizmetleri sunuyoruz.',
-    imageUrl: '/placeholder-service6.jpg',
+    imageUrl: '/elektronik-anahtar.webp',
   },
 ];
 
