@@ -158,7 +158,7 @@
 }
 
 .submitButton {
-  background-color: #ffab40;
+  background-color: #009841;
   color: white;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -170,7 +170,7 @@
 }
 
 .submitButton:hover {
-  background-color: #f57c00;
+  background-color: #009841;
 }
 
 /* Responsive adjustments */

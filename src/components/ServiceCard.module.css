@@ -39,7 +39,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: #ff4500; /* Orange-Red color */
+  background-color: #009841; /* Orange-Red color */
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -51,7 +51,7 @@
 }
 
 .videoButton:hover {
-  background-color: #e03e00; /* Darker shade on hover */
+  background-color: #009841; /* Darker shade on hover */
 }
 
 .videoButton svg {
